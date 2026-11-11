@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f2e9dc">
+    <meta name="description" content="了解云南非遗文化展示与体验平台：从地图发现技艺，通过视频、网课、文创商品与线下活动走近云南非遗。">
+    <title>云南非遗文化平台 — 让手艺从看见到体验</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+  </head>
+  <body class="heritage-page">
+    <div class="yunnan-photo-intro" role="dialog" aria-modal="true" aria-labelledby="photo-intro-title" aria-describedby="photo-intro-prompt" tabindex="-1">
+      <div class="photo-intro-gallery" aria-hidden="true">
+        <div class="photo-intro-frame" data-photo-scene="0"><img src="assets/yunnan-prayer-flags.jpg" alt=""></div>
+        <div class="photo-intro-frame" data-photo-scene="1"><img src="assets/yunnan-valley.jpg" alt=""></div>
+        <div class="photo-intro-frame" data-photo-scene="2"><img src="assets/yunnan-lake-forest.jpg" alt=""></div>
+        <div class="photo-intro-frame photo-intro-final" data-photo-scene="3">
+          <div class="mountain-composition">
+            <div class="mountain-frame mountain-frame-main">
+              <img src="assets/yunnan-mountain-golden-hour.jpg" alt="">
+              <p class="mountain-caption"><span>光落山巅 · 云南</span><span>山景选辑 · 01—03</span></p>
+            </div>
+            <div class="mountain-frame mountain-frame-dawn"><img src="assets/yunnan-mountain-dawn.jpg" alt=""></div>
+            <div class="mountain-frame mountain-frame-alpenglow"><img src="assets/yunnan-mountain-alpenglow.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-intro-shade" aria-hidden="true"></div>
+      <div class="photo-intro-copy">
+        <p>山河入境 · 非遗在身边</p>
+        <h1 id="photo-intro-title" data-yunnan-art>云南</h1>
+        <span id="photo-intro-prompt">点击任意位置，开启云南非遗之旅</span>
+      </div>
+      <button class="photo-intro-skip" type="button">跳过 <span aria-hidden="true">↗</span></button>
+    </div>
+    <a class="skip-link" href="#main">跳转到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="云南非遗文化平台首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>云南非遗</strong><small>文化展示与体验平台</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="主导航">
+        <a href="#discover">发现非遗</a>
+        <a href="#experience">体验路径</a>
+        <a href="#demo">交互演示</a>
+        <a href="#guide">使用指南</a>
+        <a href="#rank">排行榜</a>
+        <a href="#about">后台管理</a>
+      </nav>
+      <a class="header-cta" href="#experience">开启体验 <span aria-hidden="true">↗</span></a>
+      <div class="language-switch" role="group" aria-label="选择语言">
+        <button type="button" data-language="zh" aria-pressed="true" aria-label="切换到中文">中文</button>
+        <span aria-hidden="true">/</span>
+        <button type="button" data-language="en" aria-pressed="false" aria-label="Switch to English">EN</button>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <section class="hero page-wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YUNNAN · CRAFTS IN MOTION</p>
+          <h1 id="hero-title" data-i18n-html="heroHeadline">让云南手艺，<br>被看见，也被<span class="accent-word">体验。</span></h1>
+          <p class="hero-description">从一张云南地图出发，遇见非遗影像、线上课程、手作好物与线下体验。让传统，不止被看见。</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#discover">开启非遗之旅 <span aria-hidden="true">↓</span></a>
+            <a class="button button-outline" href="#demo">看看真实页面 <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#guide">找到你的下一步 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-stamp" aria-hidden="true">滇</span>
+            <p><strong>看见一门手艺，走近一种生活</strong><br><span>看见 · 学习 · 选购 · 参与</span></p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-image-wrap">
+            <img src="assets/screen-home.jpg" alt="小程序首页实机画面：云南扎染主题、城市地图与底部导航" fetchpriority="high">
+            <div class="image-caption">
+              <span class="caption-dot" aria-hidden="true"></span>
+              <span>从云南地图，开启一段手艺旅程</span>
+              <span class="caption-number">实机页面</span>
+            </div>
+          </div>
+          <div class="floating-note note-top"><span class="note-icon" aria-hidden="true">✳</span><span>非遗文化<br><b>就在身边</b></span></div>
+          <div class="floating-note note-bottom"><span class="note-number">4</span><span>种走近手艺的<br><b>体验方式</b></span></div>
+          <span class="hero-sun" aria-hidden="true"></span>
+        </div>
+        <a class="scroll-cue" href="#discover"><span></span> 向下探索</a>
+      </section>
+
+      <section class="ribbon" aria-label="平台体验概览">
+        <div class="ribbon-track">
+          <span>发现一门手艺 <b>✳</b></span><span>读懂一段来历 <b>✳</b></span><span>亲手体验一次 <b>✳</b></span><span>把文化带进日常 <b>✳</b></span>
+          <span aria-hidden="true">发现一门手艺 <b>✳</b></span><span aria-hidden="true">读懂一段来历 <b>✳</b></span><span aria-hidden="true">亲手体验一次 <b>✳</b></span><span aria-hidden="true">把文化带进日常 <b>✳</b></span>
+        </div>
+      </section>
+
+      <section class="section discover-section" id="discover" aria-labelledby="discover-title">
+        <div class="page-wrap">
+          <div class="section-heading heading-split">
+            <div>
+              <p class="eyebrow"><span class="section-index">01</span> A CULTURE, A JOURNEY</p>
+              <h2 id="discover-title" data-i18n-html="discoverHeadline">不必远行，<br><span class="serif-italic">从地图遇见云南手艺。</span></h2>
+            </div>
+            <p class="heading-aside">从地图找到入口，从影像认识技艺，再沿着课程、商品与活动，发现你和非遗之间的连接。</p>
+          </div>
+
+          <div class="map-feature js-reveal">
+            <div class="map-copy">
+              <span class="feature-kicker">EXPLORE BY PLACE</span>
+              <h3>点亮一处，<br>打开一段手艺故事。</h3>
+              <p>点选地图区域，弹出视频内容预览；从一帧真实页面，走进非遗故事。</p>
+              <p class="map-selection" aria-live="polite">点选地图，看看一段手艺影像。</p>
+              <p class="map-data-note">当前各点位均展示皮影戏示例；项目视频尚无地区关联数据</p>
+              <span class="map-watermark" aria-hidden="true">滇</span>
+            </div>
+            <div class="map-visual">
+              <div class="map-topline"><span>YUNNAN · 云南</span><span>点选一处，遇见手艺</span></div>
+              <div class="map-grid" role="group" aria-label="点击地图区域，打开视频预览">
+                <button type="button" class="map-tile" data-map-video="1" aria-label="查看地图区域 1 的视频预览"><img src="assets/mapnavi/chunk_0.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="2" aria-label="查看地图区域 2 的视频预览"><img src="assets/mapnavi/chunk_1.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="3" aria-label="查看地图区域 3 的视频预览"><img src="assets/mapnavi/chunk_2.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="4" aria-label="查看地图区域 4 的视频预览"><img src="assets/mapnavi/chunk_3.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="5" aria-label="查看地图区域 5 的视频预览"><img src="assets/mapnavi/chunk_4.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="6" aria-label="查看地图区域 6 的视频预览"><img src="assets/mapnavi/chunk_5.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="7" aria-label="查看地图区域 7 的视频预览"><img src="assets/mapnavi/chunk_6.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="8" aria-label="查看地图区域 8 的视频预览"><img src="assets/mapnavi/chunk_7.png" alt="" loading="lazy"></button>
+                <button type="button" class="map-tile" data-map-video="9" aria-label="查看地图区域 9 的视频预览"><img src="assets/mapnavi/chunk_8.png" alt="" loading="lazy"></button>
+              </div>
+              <div class="map-bottomline"><span>从地域出发，遇见非遗</span><span aria-hidden="true">✳</span></div>
+              <p class="map-hint">点击任意区域 · 打开一段影像预览</p>
+            </div>
+          </div>
+          <dialog class="map-video-dialog" id="map-video-dialog" aria-labelledby="map-video-title">
+            <button type="button" class="map-video-close" id="map-video-close" aria-label="关闭视频预览">×</button>
+            <div class="map-video-preview">
+              <img src="assets/screen-materials.jpg" alt="皮影戏视频详情静态预览，画面展示皮影人物制作">
+              <span>视频画面预览</span>
+            </div>
+            <div class="map-video-copy">
+              <p class="eyebrow" id="map-video-region">地图区域 1 · 内容预览</p>
+              <h3 id="map-video-title">皮影戏 · 视频详情</h3>
+              <p>从刻画、上色到光影登场，透过项目中的皮影戏详情页面，看见一门手艺的制作现场。</p>
+              <p class="map-video-disclaimer">当前小程序视频数据没有地区关联字段；所有点位展示同一条皮影戏示例，暂不代表真实地区匹配。</p>
+              <div class="map-video-actions">
+                <button type="button" class="map-video-dismiss" id="map-video-dismiss">返回地图</button>
+                <button type="button" class="map-video-open" id="map-video-open">继续探索皮影戏 <span aria-hidden="true">↗</span></button>
+              </div>
+            </div>
+          </dialog>
+
+          <div class="mini-intro">
+            <span class="mini-intro-mark" aria-hidden="true">“</span>
+            <p>让文化不只被观看。<br><strong>看见它，听见它，再亲手靠近它。</strong></p>
+            <span class="mini-intro-label">从兴趣到体验</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="page-wrap">
+          <div class="section-heading">
+            <p class="eyebrow"><span class="section-index">02</span> YOUR WAY INTO HERITAGE</p>
+            <h2 id="experience-title" data-i18n-html="experienceHeadline">看、学、逛、参与——<br><span class="serif-italic">总有一种方式，与你有关。</span></h2>
+            <p class="section-lead">从第一次好奇开始，挑一条你喜欢的非遗体验路径。</p>
+          </div>
+
+          <div class="filter-row" role="group" aria-label="筛选体验内容">
+            <span class="filter-label">浏览方式</span>
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-chip" type="button" data-filter="learn" aria-pressed="false">看与学</button>
+            <button class="filter-chip" type="button" data-filter="shop" aria-pressed="false">逛与买</button>
+            <button class="filter-chip" type="button" data-filter="join" aria-pressed="false">报名参与</button>
+            <span class="filter-count" aria-live="polite">4 个体验入口</span>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card card-map js-reveal" data-category="learn">
+              <div class="card-image card-image-map">
+                <img src="assets/screen-materials.jpg" alt="小程序皮影戏视频详情页实机截图，包含动手试试入口" loading="lazy">
+                <span class="image-tag">看 · 了解技艺</span>
+                <span class="card-index">01</span>
+              </div>
+              <div class="card-body">
+                <p class="card-eyebrow">VIDEO STORIES</p>
+                <h3>看见幕后，<br>让技艺有迹可循。</h3>
+                <p>从非遗视频认识制作过程；皮影戏详情页还可继续前往相关原材料。</p>
+                <a class="card-link" href="#guide" data-guide="video">从影像开始了解 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="experience-card card-course js-reveal" data-category="learn">
+              <div class="card-image card-image-course">
+                <img src="assets/screen-course.jpg" alt="PDF 中的非遗网课实机截图，显示基础扎染花样课程和学习按钮" loading="lazy">
+                <span class="image-tag">学 · 跟着课程</span>
+                <span class="card-index">02</span>
+              </div>
+              <div class="card-body">
+                <p class="card-eyebrow">ONLINE LESSONS</p>
+                <h3>跟着课程，<br>体验扎染第一步。</h3>
+                <p>从讲师介绍到课程视频，循序了解扎染。演示课程《基础扎染花样》标价 ¥0.00。</p>
+                <a class="card-link" href="#guide" data-guide="course">看看课程怎么学 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="experience-card card-shop js-reveal" data-category="shop">
+              <div class="card-image card-image-shop">
+                <img src="assets/screen-shop.jpg" alt="PDF 中的小程序商城页面，显示商品分类和扎染半身裙商品" loading="lazy">
+                <span class="image-tag">逛 · 非遗工坊</span>
+                <span class="card-index">03</span>
+              </div>
+              <div class="card-body">
+                <p class="card-eyebrow">CRAFT & GOODS</p>
+                <h3>把手艺带进日常，<br>从一件好物开始。</h3>
+                <p>按分类或关键词发现商品，查看价格、描述与文化标签，找到心仪的手作好物。</p>
+                <a class="card-link" href="#categories">发现手作好物 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="experience-card card-join js-reveal" data-category="join">
+              <div class="card-image card-image-join">
+                <img src="assets/activity-list.jpg" alt="小程序活动列表实机截图，显示丝巾制作、DIY扎染、藏香制作等活动及报名入口" loading="lazy">
+                <span class="image-tag">参与 · 线下活动</span>
+                <span class="card-index">04</span>
+              </div>
+              <div class="card-body">
+                <p class="card-eyebrow">MEET & MAKE</p>
+                <h3>走进现场，<br>让体验留下记忆。</h3>
+                <p>浏览活动介绍与地点，填写报名信息，把屏幕里的手艺带到真实体验中。</p>
+                <a class="card-link" href="#guide" data-guide="activity">找到活动参与方式 <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="content-note">页面中的课程、商品与活动名称取自现有演示资料；具体内容以小程序实际展示为准。</p>
+        </div>
+      </section>
+
+      <section class="phone-demo-section" id="demo" aria-labelledby="demo-heading">
+        <div class="page-wrap">
+          <div class="section-heading heading-split">
+            <div>
+              <p class="eyebrow"><span class="section-index">03</span> MINI PROGRAM · INTERACTIVE WALKTHROUGH</p>
+              <h2 id="demo-heading" data-i18n-html="demoHeadline">不止于看见，<br><span class="serif-italic">亲手点开这段体验。</span></h2>
+            </div>
+            <p class="heading-aside">切换实机页面，或按“地图 → 视频 → 动手试试 → 原材料”继续。这里是本地界面演示，不会调用微信登录、下单或线上接口。</p>
+          </div>
+          <div class="phone-demo-layout">
+            <div class="demo-device-wrap">
+              <div class="demo-device" id="demo-panel" role="tabpanel" aria-labelledby="demo-tab-home" aria-live="polite" aria-label="小程序页面演示画面">
+                <div class="demo-device-camera" aria-hidden="true"></div>
+                <img id="demo-screen" src="assets/screen-home.jpg" alt="小程序首页实机截图，包含地图入口">
+              </div>
+              <p class="demo-screen-caption" id="demo-screen-caption">首页地图 · 实机页面</p>
+            </div>
+            <div class="demo-controls">
+              <div class="demo-status"><span class="status-pulse"></span> 实机截图 · 可交互页面路径</div>
+              <h3 id="demo-step-title">从首页地图进入内容</h3>
+              <p id="demo-step-description">首页的云南地图由 9 块拼图组成；小程序点击拼图会打开对应的视频详情。点击下方按钮模拟进入演示视频。</p>
+              <div class="demo-tabs" role="tablist" aria-label="选择小程序演示页面">
+                <button type="button" id="demo-tab-home" role="tab" aria-controls="demo-panel" data-demo-mode="home" aria-selected="true">首页地图</button>
+                <button type="button" id="demo-tab-video" role="tab" aria-controls="demo-panel" data-demo-mode="video" aria-selected="false">视频详情</button>
+                <button type="button" id="demo-tab-materials" role="tab" aria-controls="demo-panel" data-demo-mode="materials" aria-selected="false">原材料</button>
+                <button type="button" id="demo-tab-shop" role="tab" aria-controls="demo-panel" data-demo-mode="shop" aria-selected="false">非遗工坊</button>
+                <button type="button" id="demo-tab-activity" role="tab" aria-controls="demo-panel" data-demo-mode="activity" aria-selected="false">线下活动</button>
+                <button type="button" id="demo-tab-rank" role="tab" aria-controls="demo-panel" data-demo-mode="rank" aria-selected="false">热度榜</button>
+              </div>
+              <div class="demo-action-row">
+                <button class="button button-dark" type="button" id="demo-action">打开示例视频 <span aria-hidden="true">↗</span></button>
+                <span class="demo-step-count" id="demo-step-count">步骤 1 / 3</span>
+              </div>
+              <p class="demo-feedback" id="demo-feedback" role="status" aria-live="polite">示例视频截图为皮影戏视频详情；实际视频内容由小程序接口返回。</p>
+              <p class="demo-disclaimer">演示使用产品中的实机画面与静态数据。真实报名和订单需在微信小程序内登录并连接部署中的服务。</p>
+            </div>
+          </div>
+          <div class="demo-gallery">
+            <div class="demo-gallery-heading">
+              <h3>更多小程序页面</h3>
+              <p>点击图片切换演示画面</p>
+            </div>
+            <div class="demo-gallery-grid" role="group" aria-label="更多小程序页面预览">
+              <button type="button" class="demo-gallery-card" data-demo-preview="home" aria-pressed="true"><img src="assets/screen-home.jpg" alt="" loading="lazy"><span>首页地图</span></button>
+              <button type="button" class="demo-gallery-card" data-demo-preview="video" aria-pressed="false"><img src="assets/screen-video.jpg" alt="" loading="lazy"><span>视频详情</span></button>
+              <button type="button" class="demo-gallery-card" data-demo-preview="materials" aria-pressed="false"><img src="assets/screen-materials.jpg" alt="" loading="lazy"><span>原材料</span></button>
+              <button type="button" class="demo-gallery-card" data-demo-preview="shop" aria-pressed="false"><img src="assets/screen-shop.jpg" alt="" loading="lazy"><span>非遗工坊</span></button>
+              <button type="button" class="demo-gallery-card" data-demo-preview="activity" aria-pressed="false"><img src="assets/activity-list.jpg" alt="" loading="lazy"><span>线下活动</span></button>
+              <button type="button" class="demo-gallery-card" data-demo-preview="rank" aria-pressed="false"><img src="assets/screen-rank.jpg" alt="" loading="lazy"><span>热度榜</span></button>
+            </div>
+          </div>
+          <dialog class="demo-dialog" id="order-demo-dialog" aria-labelledby="order-demo-title">
+            <form method="dialog" id="order-demo-form">
+              <p class="eyebrow">界面交互演示</p>
+              <h3 id="order-demo-title">填写订购数量</h3>
+              <label for="demo-quantity">数量</label>
+              <input id="demo-quantity" name="quantity" type="number" min="1" value="1" required>
+              <p>此处只演示小程序中的数量填写界面，不会创建订单。</p>
+              <div class="demo-dialog-actions">
+                <button type="button" class="demo-dialog-cancel" id="order-demo-cancel">取消</button>
+                <button type="submit" class="demo-dialog-submit">确认演示</button>
+              </div>
+            </form>
+          </dialog>
+        </div>
+      </section>
+
+      <section class="category-section" id="categories" aria-labelledby="category-title">
+        <div class="page-wrap category-layout">
+          <div class="category-intro">
+            <p class="eyebrow"><span class="section-index">04</span> CRAFTS & EVERYDAY LIFE</p>
+            <h2 id="category-title" data-i18n-html="categoryHeadline">手艺不远，<br><span class="serif-italic">就在日常之间。</span></h2>
+            <p>点选入口，下面会显示后台商品库中对应的真实商品图片、名称和售价；没有对应商品记录的分类会明确显示为空。</p>
+            <div class="category-list" role="group" aria-label="筛选商品">
+              <button type="button" class="category-button is-selected" data-category-name="全部商品" data-category="all" aria-pressed="true">全部商品 <span>13</span></button>
+              <button type="button" class="category-button" data-category-name="香料" data-category="spice" aria-pressed="false">香料 <span>00</span></button>
+              <button type="button" class="category-button" data-category-name="乐器" data-category="music" aria-pressed="false">乐器 <span>00</span></button>
+              <button type="button" class="category-button" data-category-name="扎染" data-category="dye" aria-pressed="false">扎染 <span>09</span></button>
+              <button type="button" class="category-button" data-category-name="饰品" data-category="accessories" aria-pressed="false">饰品 <span>03</span></button>
+              <button type="button" class="category-button" data-category-name="衣物" data-category="clothing" aria-pressed="false">衣物 <span>04</span></button>
+              <button type="button" class="category-button" data-category-name="茶叶" data-category="tea" aria-pressed="false">茶叶 <span>00</span></button>
+            </div>
+          </div>
+          <div class="product-showcase" aria-live="polite">
+            <div class="product-showcase-header">
+              <div><span class="showcase-overline">来自小程序后台商品记录</span><h3 id="active-category">全部商品</h3></div>
+              <span class="product-count" id="product-count">13 件商品</span>
+            </div>
+            <div class="product-grid" id="product-grid"></div>
+            <div class="product-empty" id="product-empty" hidden>
+              <span class="empty-flower" aria-hidden="true">✳</span>
+              <h4>当前后台暂无这个分类的商品</h4>
+              <p>分类入口已在小程序中设置；现有商品数据中没有匹配项目，因此不虚构商品。</p>
+              <button type="button" class="show-all-products">返回全部商品</button>
+            </div>
+            <p class="product-data-note">商品图片、名称、价格与标签取自本地后台数据库快照。商品分类按当前商品的分类标签、文化标签及商品名称筛选；线上订单需在微信小程序内完成。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section guide-section" id="guide" aria-labelledby="guide-title">
+        <div class="page-wrap">
+          <div class="section-heading heading-split">
+            <div>
+              <p class="eyebrow"><span class="section-index">05</span> A SIMPLE GUIDE</p>
+              <h2 id="guide-title" data-i18n-html="guideHeadline">想看、想学、想参与？<br><span class="serif-italic">从这里找到你的下一步。</span></h2>
+            </div>
+            <p class="heading-aside">按你想做的事选择路径。以下说明基于当前小程序页面与产品演示整理。</p>
+          </div>
+
+          <div class="guide-tabs" role="tablist" aria-label="选择使用指南">
+            <button id="tab-explore" class="guide-tab is-current" type="button" role="tab" aria-selected="true" aria-controls="panel-explore" data-panel="explore">我想看与学</button>
+            <button id="tab-shop" class="guide-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-shop" data-panel="shop">我想浏览商品</button>
+            <button id="tab-activity" class="guide-tab" type="button" role="tab" aria-selected="false" aria-controls="panel-activity" data-panel="activity">我想报名活动</button>
+          </div>
+
+          <div class="guide-panel is-current" id="panel-explore" role="tabpanel" aria-labelledby="tab-explore">
+            <div class="guide-panel-copy">
+              <span class="guide-panel-kicker">文化浏览与学习</span>
+              <h3>先被一门手艺吸引，<br>再顺着兴趣往下走。</h3>
+              <p>从地图和影像认识非遗，再进入课程，了解技艺如何一步步完成。</p>
+              <figure class="guide-screen">
+                <img src="assets/screen-course.jpg" alt="小程序非遗网课实机页面，显示基础扎染花样课程及第一步教学视频" loading="lazy">
+                <figcaption>非遗网课 · 实机页面</figcaption>
+              </figure>
+            </div>
+            <ol class="guide-steps">
+              <li><span class="step-number">01</span><div><h4>从首页地图发现</h4><p>进入小程序首页，浏览主题内容；点击地图拼图入口，打开对应的视频详情。</p></div></li>
+              <li><span class="step-number">02</span><div><h4>选择视频或网课</h4><p>在视频页观看非遗项目介绍，或在网课列表查看课程讲师、价格与学习入口。</p></div></li>
+              <li><span class="step-number">03</span><div><h4>打开课程开始学习</h4><p>点击课程卡片上的“学习”；有教学视频的课程可播放，视频结束后可收起。</p></div></li>
+            </ol>
+          </div>
+
+          <div class="guide-panel" id="panel-shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
+            <div class="guide-panel-copy">
+              <span class="guide-panel-kicker">商品浏览与订购</span>
+              <h3>挑一件喜欢的手作，<br>让传统走进日常。</h3>
+              <p>工坊提供商品分类、搜索与商品信息查看。订购前可在个人中心维护收货地址。</p>
+              <figure class="guide-screen">
+                <img src="assets/screen-shop.jpg" alt="小程序商城实机页面，显示香料、乐器、扎染等入口及棕榈半身裙商品" loading="lazy">
+                <figcaption>非遗工坊 · 实机页面</figcaption>
+              </figure>
+            </div>
+            <ol class="guide-steps">
+              <li><span class="step-number">01</span><div><h4>进入非遗工坊</h4><p>按香料、乐器、扎染、饰品、衣物、茶叶等分类浏览，也可搜索商品名称或描述。</p></div></li>
+              <li><span class="step-number">02</span><div><h4>查看商品并选择数量</h4><p>商品卡片展示名称、描述、价格及相关标签；点击订购入口后，按提示填写数量。</p></div></li>
+              <li><span class="step-number">03</span><div><h4>登录并完善收货信息</h4><p>订购需登录。需要收货信息时，先在个人中心填写收货人、联系电话和详细地址，再查看“我的订单”。</p></div></li>
+            </ol>
+          </div>
+
+          <div class="guide-panel" id="panel-activity" role="tabpanel" aria-labelledby="tab-activity" hidden>
+            <div class="guide-panel-copy">
+              <span class="guide-panel-kicker">线下活动报名</span>
+              <h3>走进一场活动，<br>亲自感受手艺温度。</h3>
+              <p>活动信息包含介绍、地点与联系信息；报名表支持填写参与人数和备注。</p>
+              <figure class="guide-screen">
+                <img src="assets/activity-list.jpg" alt="小程序活动列表实机截图，包含活动信息和报名入口" loading="lazy">
+                <figcaption>报名记录入口 · 个人中心实机页面</figcaption>
+              </figure>
+            </div>
+            <ol class="guide-steps">
+              <li><span class="step-number">01</span><div><h4>浏览活动列表</h4><p>查看活动介绍、地点、联系电话及报名状态；也可从活动查看相关商品。</p></div></li>
+              <li><span class="step-number">02</span><div><h4>登录后填写报名信息</h4><p>选择尚未报名的活动，填写姓名、微信号、参与人数与选填备注。</p></div></li>
+              <li><span class="step-number">03</span><div><h4>提交并在个人中心查看</h4><p>提交报名后，可在个人中心进入“我的活动”查看相关报名记录。</p></div></li>
+            </ol>
+          </div>
+          <p class="guide-footnote"><span aria-hidden="true">✳</span> 小程序中的部分操作需要登录；具体商品、课程与活动信息以实际页面为准。</p>
+        </div>
+      </section>
+
+      <section class="rank-section" id="rank" aria-labelledby="rank-title">
+        <div class="page-wrap rank-layout">
+          <div class="rank-copy">
+            <p class="eyebrow"><span class="section-index">06</span> CULTURE IN FOCUS</p>
+            <h2 id="rank-title" data-i18n-html="rankHeadline">人气从哪里来？<br><span class="serif-italic">看见手艺被关注的方式。</span></h2>
+            <p>商品、视频与活动数据汇成文化热度，让每一种关注都有迹可循。下方为本地数据库快照，并非线上实时榜单。</p>
+            <div class="rank-rules">
+              <p><b>商品</b><span>未取消订单的商品数量 × 2</span></p>
+              <p><b>视频</b><span>视频浏览量</span></p>
+              <p><b>活动</b><span>报名参与人数</span></p>
+            </div>
+            <p class="rank-explainer">同一文化标签下的商品、视频与活动热度会相加；排行榜由数据计算，不是在后台手动拖拽排序。</p>
+          </div>
+          <div class="rank-board">
+            <div class="rank-board-heading"><span>文化标签热度</span><small>本地演示数据快照</small></div>
+            <div class="rank-legend" aria-label="热度来源图例">
+              <span><i class="legend-goods"></i>商品销量</span><span><i class="legend-video"></i>视频浏览</span><span><i class="legend-activity"></i>活动报名</span>
+            </div>
+            <ol class="rank-podium" aria-label="热度前三名及来源拆解">
+              <li class="podium-item">
+                <div class="podium-label"><span class="rank-number">01</span><b>扎染</b><strong>142</strong></div>
+                <div class="stacked-meter" role="img" aria-label="扎染热度 142：商品 126，视频 0，活动 16">
+                  <i class="meter-goods" style="--segment:88.7%"></i><i class="meter-video" style="--segment:0%"></i><i class="meter-activity" style="--segment:11.3%"></i>
+                </div>
+                <small>商品 126 <span>+</span> 视频 0 <span>+</span> 活动 16</small>
+              </li>
+              <li class="podium-item">
+                <div class="podium-label"><span class="rank-number">02</span><b>蓝染</b><strong>122</strong></div>
+                <div class="stacked-meter" role="img" aria-label="蓝染热度 122：商品 122，视频 0，活动 0">
+                  <i class="meter-goods" style="--segment:85.9%"></i><i class="meter-video" style="--segment:0%"></i><i class="meter-activity" style="--segment:0%"></i>
+                </div>
+                <small>商品 122 <span>+</span> 视频 0 <span>+</span> 活动 0</small>
+              </li>
+              <li class="podium-item">
+                <div class="podium-label"><span class="rank-number">03</span><b>皮影戏</b><strong>64</strong></div>
+                <div class="stacked-meter" role="img" aria-label="皮影戏热度 64：商品 24，视频 40，活动 0">
+                  <i class="meter-goods" style="--segment:16.9%"></i><i class="meter-video" style="--segment:28.2%"></i><i class="meter-activity" style="--segment:0%"></i>
+                </div>
+                <small>商品 24 <span>+</span> 视频 40 <span>+</span> 活动 0</small>
+              </li>
+            </ol>
+            <div class="rank-more"><span>其余标签</span><b>藏香 14</b><b>饰品 8</b><b>藏族文化 4</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="personal-section" aria-labelledby="personal-title">
+        <div class="page-wrap personal-layout">
+          <div class="personal-art">
+            <figure class="profile-screenshot">
+              <img src="assets/personal-center.jpg" alt="小程序个人中心实机截图，显示积分、订单、收货地址和我的活动入口" loading="lazy">
+              <figcaption>个人中心 · 实机页面</figcaption>
+            </figure>
+          </div>
+          <div class="personal-copy">
+            <p class="eyebrow"><span class="section-index">07</span> YOUR PERSONAL SPACE</p>
+            <h2 id="personal-title" data-i18n-html="personalHeadline">每一次参与，<br><span class="serif-italic">都留有一份记录。</span></h2>
+            <p>个人中心集中管理用户资料与常用入口。登录后可查看积分和订单数量、维护收货地址、查看我的活动与订单，或编辑个人资料。</p>
+            <div class="personal-tags"><span>我的订单</span><span>收货地址</span><span>我的活动</span><span>编辑资料</span></div>
+            <p class="small-note">演示中的个人中心画面显示积分 25、订单 1；实际内容随账号数据变化。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="admin-section" id="about" aria-labelledby="about-title">
+        <div class="page-wrap">
+          <div class="section-heading heading-split">
+            <div>
+              <p class="eyebrow"><span class="section-index">08</span> DJANGO BACK OFFICE</p>
+              <h2 id="about-title" data-i18n-html="adminHeadline">移动端之外，<br><span class="serif-italic">还有可拓展的管理后台。</span></h2>
+            </div>
+            <p class="heading-aside">基于 Django Admin 与 SimpleUI 的后台管理能力，可维护内容、用户和业务记录。内容标签、活动地点等支持按实际运营区域配置；如需更换首页地图或改造地区入口，则需相应前端定制。</p>
+          </div>
+          <div class="admin-tabs" role="tablist" aria-label="浏览管理后台实机截图">
+            <button type="button" class="admin-tab is-current" id="tab-admin-goods" role="tab" aria-selected="true" aria-controls="panel-admin-goods" data-admin-panel="goods">商品管理</button>
+            <button type="button" class="admin-tab" id="tab-admin-activity" role="tab" aria-selected="false" aria-controls="panel-admin-activity" data-admin-panel="activity">活动管理</button>
+          </div>
+          <div class="admin-panel" id="panel-admin-goods" role="tabpanel" aria-labelledby="tab-admin-goods">
+            <figure class="admin-screenshot">
+              <img src="assets/admin-goods.jpg" alt="产品介绍 PDF 中的 Django Admin 商品管理列表实机截图" loading="lazy">
+              <figcaption>商品列表 · 产品演示中的后台页面</figcaption>
+            </figure>
+            <div class="admin-panel-copy">
+              <span class="admin-panel-kicker">DJANGO ADMIN · GOODS</span>
+              <h3>商品资料，在后台集中维护。</h3>
+              <p>商品后台提供关键词搜索和类型、文化标签、商家编号、创建时间筛选；可维护商品图片、成品或原材料类型、描述、价格、文化标签、分类标签、商家信息及“是否删除”状态（项目没有独立库存或上下架字段）。</p>
+              <ul class="admin-facts">
+                <li><span>01</span>成品与原材料管理</li>
+                <li><span>02</span>文化标签与分类检索</li>
+                <li><span>03</span>价格、商家信息与排序</li>
+              </ul>
+            </div>
+          </div>
+          <div class="admin-panel" id="panel-admin-activity" role="tabpanel" aria-labelledby="tab-admin-activity" hidden>
+            <figure class="admin-screenshot">
+              <img src="assets/admin-activity.jpg" alt="产品介绍 PDF 中的 Django Admin 新增活动表单实机截图" loading="lazy">
+              <figcaption>新增活动 · 产品演示中的后台页面</figcaption>
+            </figure>
+            <div class="admin-panel-copy">
+              <span class="admin-panel-kicker">DJANGO ADMIN · ACTIVITY</span>
+              <h3>活动与报名记录，关联管理。</h3>
+              <p>后台可维护活动标题、内容、图片、标签和联系信息；报名记录独立管理，并关联对应活动。订单与订单项分别登记，后台还可维护课程及课程视频。</p>
+              <ul class="admin-facts">
+                <li><span>01</span>活动内容与联系信息</li>
+                <li><span>02</span>活动报名记录与人数</li>
+                <li><span>03</span>订单、订单项与课程</li>
+              </ul>
+            </div>
+          </div>
+          <div class="admin-howto">
+            <div class="admin-howto-heading">
+              <p class="eyebrow"><span class="section-index">09</span> ADMIN & EXTENSIBILITY</p>
+              <h3 data-i18n-html="adminStepsHeadline">登录后台，<br><span class="serif-italic">四步管理日常内容。</span></h3>
+              <p>使用已配置的管理员账号访问 <code>/admin/</code>，集中维护商品、课程、视频、活动与订单。</p>
+              <p class="small-note">标签与活动地点可按运营区域配置；更换地图或地区入口需定制前端。项目未提供公开演示账号。</p>
+            </div>
+            <ol class="admin-steps">
+              <li><span>01</span><div><h4>上新内容</h4><p>在商品、网课或视频中新增与编辑图片、价格、标签和排序；保存后检查小程序展示。</p></div></li>
+              <li><span>02</span><div><h4>发布活动</h4><p>填写活动内容、图片、地点与联系方式，在关联报名记录中查看姓名、人数和备注。</p></div></li>
+              <li><span>03</span><div><h4>跟进订单</h4><p>按状态筛选订单，核对商品与收件信息，并按履约进度更新订单状态。</p></div></li>
+              <li><span>04</span><div><h4>持续维护</h4><p>维护用户、地址、轮播图和通知；排行榜根据订单、视频浏览与报名数据自动汇总，不支持手动改热度。</p></div></li>
+            </ol>
+          </div>
+          <p class="admin-source-note">下方操作说明依据 <code>smart_backend\biye\models.py</code> 与 <code>admin.py</code> 的模型及管理配置整理。后台管理功能需在部署并配置管理员账号后使用；此项目未提供公开演示地址或账号。</p>
+        </div>
+      </section>
+
+      <section class="closing-cta" aria-labelledby="closing-title">
+        <span class="closing-photo" aria-hidden="true"></span>
+        <div class="page-wrap closing-inner">
+          <span class="closing-flower" aria-hidden="true">✳</span>
+          <p class="eyebrow">A LITTLE CLOSER TO YUNNAN</p>
+          <h2 id="closing-title">让手艺被看见，让热爱有回响。</h2>
+          <p>从一段影像、一堂课程、一件好物或一场活动，开启你的云南非遗之旅。</p>
+          <a class="button button-light" href="#top">重新开启这段旅程 <span aria-hidden="true">↑</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-wrap footer-inner">
+        <a class="brand footer-brand" href="#top" aria-label="返回云南非遗文化平台首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span><strong>云南非遗</strong><small>文化展示与体验平台</small></span>
+        </a>
+        <p>以文化为线索，以体验为桥梁。</p>
+        <a href="#top" class="back-top">回到顶部 ↑</a>
+      </div>
+      <div class="page-wrap footer-legal"><span>云南非遗文化展示与体验平台 · 产品介绍</span><span>页面内容根据产品资料与演示画面整理</span></div>
+    </footer>
+  </body>
+</html>

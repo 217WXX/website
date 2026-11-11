@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2e9dc">
+  <meta name="description" content="个人主页与作品集，展示项目实践与云南非遗文化平台。">
+  <title>个人主页 · 作品集</title>
+  <link rel="stylesheet" href="profile.css">
+  <script src="i18n.js" defer></script>
+</head>
+<body>
+  <header class="profile-header">
+    <a class="wordmark" href="#top" aria-label="个人主页">
+      <span class="wordmark-mark">P</span>
+      <span>个人主页 <small>PERSONAL PORTFOLIO</small></span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#about">关于我</a>
+      <a href="#portfolio">作品集</a>
+    </nav>
+    <a class="header-link" href="#portfolio">浏览作品 <span>↘</span></a>
+    <div class="language-switch" role="group" aria-label="选择语言">
+      <button type="button" data-language="zh" aria-pressed="true" aria-label="切换到中文">中文</button>
+      <span aria-hidden="true">/</span>
+      <button type="button" data-language="en" aria-pressed="false" aria-label="Switch to English">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="intro page-width" id="about">
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> PERSONAL PROFILE · 个人主页</p>
+        <h1 data-i18n-html="profileHeadline">你好，<br>我是<span>你的姓名。</span></h1>
+        <p class="intro-lead">这里可以放一段简洁的个人介绍：你正在学习或从事什么、关注什么方向，以及你希望别人通过这个主页认识怎样的你。</p>
+        <a class="intro-cta" href="#portfolio">看看我的作品 <span>↓</span></a>
+        <div class="profile-meta">
+          <div><small>关注方向</small><strong>在此填写你的专业或兴趣</strong></div>
+          <div><small>当前状态</small><strong>在此填写你的身份或阶段</strong></div>
+        </div>
+      </div>
+      <div class="portrait-card" aria-label="个人形象图片占位区">
+        <div class="portrait-placeholder"><span>你的照片</span><i>+</i></div>
+        <div class="portrait-caption"><span>ABOUT ME</span><span>以真实经历，慢慢填满这里</span></div>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+      <div class="page-width">
+        <div class="section-title">
+          <div>
+            <p class="eyebrow"><span></span> SELECTED WORK · 作品集</p>
+            <h2 data-i18n-html="portfolioHeadline">把想法做成体验，<br><em>让作品替我表达。</em></h2>
+          </div>
+          <p>从云南非遗体验平台开始，看看一个想法如何成为可探索的数字作品。</p>
+        </div>
+        <a class="project-card" href="heritage.html">
+          <div class="project-cover">
+            <img src="assets/screen-home.jpg" alt="云南非遗文化小程序首页实机截图，包含地图入口">
+            <span class="cover-label">WEB DESIGN · PRODUCT STORY</span>
+            <span class="cover-arrow" aria-hidden="true">↗</span>
+          </div>
+          <div class="project-copy">
+            <div class="project-meta"><span>01 / 个人项目</span><span>文化体验 · 网页设计</span></div>
+            <h3 data-i18n-html="projectHeadline">让云南手艺，<br>被看见，也被体验。</h3>
+            <p>一张地图发现非遗，一段影像认识技艺，再从课程、手作好物与线下活动，走近云南文化日常。</p>
+            <div class="project-footer"><span>真实页面 · 交互演示 · 后台指南</span><span class="project-link">开启非遗之旅 <b>↗</b></span></div>
+          </div>
+        </a>
+        <p class="edit-note">带有“在此填写”的内容是个人资料占位文字，可替换为你的姓名、经历、方向与照片。</p>
+      </div>
+    </section>
+
+    <footer class="profile-footer">
+      <span>个人主页 · 作品集</span>
+      <a href="#top">回到顶部 ↑</a>
+    </footer>
+  </main>
+</body>
+</html>

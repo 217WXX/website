@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3eb">
+  <title>云南非遗 · 网页改版方案</title>
+  <link rel="stylesheet" href="figma-redesign.css">
+  <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-seal">滇</span>
+      <span><strong>云南非遗</strong><small>文化展示与体验平台</small></span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#discover">发现非遗</a>
+      <a href="#journey">体验路径</a>
+      <a href="#products">工坊好物</a>
+      <a href="#rank">排行榜</a>
+      <a href="#back-office">后台管理</a>
+    </nav>
+    <a class="header-cta" href="#guide">开始了解 <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><i></i> YUNNAN · INTANGIBLE CULTURAL HERITAGE</p>
+        <h1>让非遗，<br>从看见到<span>体验。</span></h1>
+        <p class="hero-lead">以云南地图为入口，串联技艺影像、线上课程、文创商品与线下活动。循着一门手艺，走近云南多彩的文化日常。</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#discover">探索平台 <span>↓</span></a>
+          <a class="text-link" href="#guide">查看使用步骤 <span>↗</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="note-seal">滇</span>
+          <p><strong>一张地图，一门手艺</strong><small>发现 · 学习 · 体验 · 分享</small></p>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-wash"></div>
+        <div class="phone-frame">
+          <img src="assets/screen-home.jpg" alt="云南非遗小程序首页实机截图，包含地图入口">
+        </div>
+        <div class="hero-caption"><span class="caption-dot"></span>小程序首页 · 云南地图入口</div>
+        <div class="floating-note"><span>✳</span><p>非遗文化<br><b>就在身边</b></p></div>
+      </div>
+    </section>
+
+    <div class="journey-ribbon" id="journey">
+      <span>看见一门手艺</span><i>✳</i><span>学会一项技艺</span><i>✳</i>
+      <span>遇见一件好物</span><i>✳</i><span>参加一次体验</span>
+    </div>
+
+    <section class="section discover" id="discover">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><b>01</b> A CULTURE, A JOURNEY</p>
+          <h2>从云南出发，<br><em>循着手艺去发现。</em></h2>
+        </div>
+        <p>从地图、视频与网课，到商品和线下活动，跟随兴趣找到下一步。</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="card-image"><img src="assets/screen-home.jpg" alt="小程序首页地图入口"></div>
+          <p class="card-kicker">01 / DISCOVER</p><h3>从一方风土开始</h3>
+          <p class="card-copy">点击云南地图城市，查看当地非遗手艺与主题内容。</p>
+        </article>
+        <article class="experience-card">
+          <div class="card-image"><img src="assets/screen-course.jpg" alt="小程序网课页面实机截图"></div>
+          <p class="card-kicker">02 / LEARN</p><h3>跟着课程学一学</h3>
+          <p class="card-copy">查看讲师、课程价格与学习入口，循序了解技艺。</p>
+        </article>
+        <article class="experience-card">
+          <div class="card-image"><img src="assets/palm-skirt.jpg" alt="后台商品记录中的棕榈半身裙实物图"></div>
+          <p class="card-kicker">03 / SHOP</p><h3>遇见一件手作好物</h3>
+          <p class="card-copy">在非遗工坊浏览商品，查看价格与文化标签。</p>
+        </article>
+        <article class="experience-card">
+          <div class="card-image"><img src="assets/activity-list.jpg" alt="小程序活动列表实机截图，显示活动图片、地点信息和报名入口"></div>
+          <p class="card-kicker">04 / TAKE PART</p><h3>把兴趣带到现场</h3>
+          <p class="card-copy">浏览活动信息，报名后可在个人中心查看记录。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section products" id="products">
+      <div class="products-intro">
+        <p class="eyebrow"><b>02</b> CRAFTS & EVERYDAY LIFE</p>
+        <h2>手艺不远，<br><em>就在日常之间。</em></h2>
+        <p>点击分类，右侧商品会即时筛选。商品图片、名称和售价来自小程序后台现有记录；无匹配商品的分类显示为空。</p>
+        <div class="category-chips" role="group" aria-label="筛选工坊商品">
+          <button class="chip is-active" type="button" data-category="all" aria-pressed="true">全部 <b>13</b></button>
+          <button class="chip" type="button" data-category="dye" aria-pressed="false">扎染 <b>09</b></button>
+          <button class="chip" type="button" data-category="accessories" aria-pressed="false">饰品 <b>03</b></button>
+          <button class="chip" type="button" data-category="clothing" aria-pressed="false">衣物 <b>04</b></button>
+          <button class="chip" type="button" data-category="spice" aria-pressed="false">香料 <b>00</b></button>
+          <button class="chip" type="button" data-category="music" aria-pressed="false">乐器 <b>00</b></button>
+          <button class="chip" type="button" data-category="tea" aria-pressed="false">茶叶 <b>00</b></button>
+        </div>
+        <small class="data-note">选择没有商品的分类，会显示空状态；可点“返回全部商品”恢复列表。</small>
+      </div>
+      <div class="product-results" aria-live="polite">
+        <div class="product-results-heading">
+          <h3 id="active-category">全部商品</h3><span id="product-count">13 件商品</span>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="product-empty" id="product-empty" hidden>
+          <span aria-hidden="true">✳</span><h4>当前后台暂无这个分类的商品</h4>
+          <p>现有商品记录中没有匹配项目，不展示虚构商品。</p>
+          <button type="button" class="show-all-products">返回全部商品</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide" id="guide">
+      <div class="guide-inner">
+        <div class="guide-copy">
+          <p class="eyebrow"><b>03</b> A SIMPLE GUIDE</p>
+          <h2>从看见到参与，<br><em>三步走近手艺。</em></h2>
+          <p class="guide-lead">根据你感兴趣的内容选择入口；需要下单或报名时，依小程序页面提示继续操作。</p>
+          <div class="guide-phone">
+            <img src="assets/screen-course.jpg" alt="小程序课程页面实机截图">
+            <span>课程页面 · 实机画面</span>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><h3>从首页地图发现</h3><p>浏览主题内容，点击云南地图城市，查看当地非遗手艺。</p></div></li>
+          <li><span>02</span><div><h3>选择感兴趣的内容</h3><p>观看视频、查看网课，或浏览工坊商品与活动信息。</p></div></li>
+          <li><span>03</span><div><h3>按页面提示继续</h3><p>登录后提交订单或活动报名，并在个人中心查看相关记录。</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section rank-section" id="rank">
+      <div class="rank-copy">
+        <p class="eyebrow"><b>04</b> CULTURE IN FOCUS</p>
+        <h2>热度榜，<br><em>看见大家关注的手艺。</em></h2>
+        <p>排行榜按非遗文化标签汇总平台互动热度。此处数值来自当前本地数据库快照，不是线上实时榜单，也没有按日期截断。</p>
+        <div class="rank-rules">
+          <p><b>商品</b><span>未取消订单的商品数量 × 2</span></p>
+          <p><b>视频</b><span>视频浏览量</span></p>
+          <p><b>活动</b><span>报名参与人数</span></p>
+        </div>
+        <small>同一文化标签下的商品、视频与活动热度会相加；排行榜由数据计算，不是在后台手动拖拽排序。</small>
+      </div>
+      <div class="rank-board">
+        <div class="rank-board-heading"><span>文化标签热度</span><small>本地演示数据快照</small></div>
+        <ol>
+          <li><span class="rank-number">01</span><b>扎染</b><i><span style="width:100%"></span></i><strong>142</strong></li>
+          <li><span class="rank-number">02</span><b>蓝染</b><i><span style="width:86%"></span></i><strong>122</strong></li>
+          <li><span class="rank-number">03</span><b>皮影戏</b><i><span style="width:45%"></span></i><strong>64</strong></li>
+          <li><span class="rank-number">04</span><b>藏香</b><i><span style="width:10%"></span></i><strong>14</strong></li>
+          <li><span class="rank-number">05</span><b>饰品</b><i><span style="width:6%"></span></i><strong>8</strong></li>
+          <li><span class="rank-number">06</span><b>藏族文化</b><i><span style="width:4%"></span></i><strong>4</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section back-office" id="back-office">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><b>04</b> DJANGO BACK OFFICE</p>
+          <h2>移动端之外，<br><em>还有可拓展的管理后台。</em></h2>
+        </div>
+        <p>后台使用 Django Admin（项目路由 <code>/admin/</code>），部署后由管理员账号登录，管理内容、订单与活动报名。</p>
+      </div>
+      <div class="admin-layout">
+        <figure class="admin-image">
+          <img src="assets/admin-goods.jpg" alt="产品演示中的 Django Admin 商品管理列表截图">
+          <figcaption>商品列表 · 产品演示中的后台页面</figcaption>
+        </figure>
+        <div class="admin-details">
+          <h3>内容与业务，分类维护。</h3>
+          <p>商品后台提供关键词搜索和类型、文化标签、商家编号、创建时间筛选；可维护商品图片、类型、价格、描述与“是否删除”状态（项目没有独立库存或上下架字段）。</p>
+          <ul>
+            <li><span>01</span><b>商品管理</b><small>商品图、价格、类型与文化分类</small></li>
+            <li><span>02</span><b>活动管理</b><small>活动内容、联系信息与报名记录</small></li>
+            <li><span>03</span><b>业务记录</b><small>课程、订单与订单项</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="admin-howto">
+        <div class="admin-howto-heading">
+          <p class="eyebrow"><b>05</b> ADMIN & EXTENSIBILITY</p>
+          <h3>详细后台管理，<br><em>为不同地区灵活拓展。</em></h3>
+          <p>后台使用 Django Admin（项目路由 <code>/admin/</code>），部署后由管理员账号登录。商品分类与文化标签、视频标签、活动地点和内容都可按运营需要维护，不局限于云南非遗题材。</p>
+          <small>当前首页地图按云南设计。若需其他地区的地图、行政区入口或新的展示流程，需配合实际业务做前端页面与数据结构定制；当前项目没有公开演示地址或账号。</small>
+        </div>
+        <ol class="admin-steps">
+          <li><span>01</span><div><h4>上新或调整商品</h4><p>打开“商品”列表，新增或编辑商品：上传图片，填写标题、成品/原材料、价格、描述和联系方式；设置分类标签与文化标签、排序值及商家编号，保存后检查小程序分类展示。关闭展示时用“是否删除”状态，项目没有单独的库存字段。</p></div></li>
+          <li><span>02</span><div><h4>更新课程和视频</h4><p>在“网课”填写封面、标题、简介、价格、讲师、标签并上传课程视频；在“视频”维护标题、封面、视频文件和标签。保存后到小程序课程/视频入口确认内容。</p></div></li>
+          <li><span>03</span><div><h4>发布活动并跟进报名</h4><p>新增活动，填写标题、内容、图片、地点、联系电话、标签和商家编号。报名记录会关联活动；可在活动详情查看报名人数，也可进入“报名记录”核对姓名、联系方式、人数与备注。</p></div></li>
+          <li><span>04</span><div><h4>处理商品订单</h4><p>在“订单”按状态筛选或搜索用户、收件人和电话；打开订单核对商品明细、数量、收件地址与备注，并按实际履约进度更新待处理、已确认、已发货、已完成或已取消状态。</p></div></li>
+          <li><span>05</span><div><h4>维护用户资料与常用内容</h4><p>在用户资料、收货地址、轮播图和通知等列表核对或更新内容。管理员按项目当前权限操作；交付时应另行确认备份、账号权限和数据维护责任。</p></div></li>
+        </ol>
+      </div>
+      <p class="rank-admin-note">说明依据项目的 Django 模型和管理配置整理。后台管理功能需在部署并配置管理员账号后使用；此项目未提供公开演示地址或账号。排行榜由有效商品、视频浏览量和活动报名人数自动汇总，后台没有手动编辑热度值的页面。</p>
+    </section>
+
+    <section class="closing">
+      <p class="eyebrow">A LITTLE CLOSER TO YUNNAN</p>
+      <h2>从一门感兴趣的手艺开始。</h2>
+      <p>地图、课程、视频、好物与活动，循着你的兴趣，找到下一步。</p>
+      <a class="button button-light" href="#top">回到页面顶部 <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <span>云南非遗文化展示与体验平台</span>
+    <small>页面内容根据小程序实机画面、产品资料与后台项目整理</small>
+  </footer>
+  <script src="figma-redesign.js"></script>
+</body>
+</html>
